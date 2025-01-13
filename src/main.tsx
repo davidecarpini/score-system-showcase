@@ -3,14 +3,14 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { Provider } from "./components/ui/provider.tsx";
-import { HashRouter } from "react-router";
+import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <HashRouter basename="/score-system-showcase">
+        <BrowserRouter basename="/score-system-showcase">
             <Provider>
                 <App />
             </Provider>
-        </HashRouter>
+        </BrowserRouter>
     </StrictMode>
 );
